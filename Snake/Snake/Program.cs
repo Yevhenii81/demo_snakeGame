@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
@@ -20,7 +20,7 @@ namespace SnakeGame
 
         private const int FrameMs = 200;
 
-        private const ConsoleColor BorderColor = ConsoleColor.Black;
+        private const ConsoleColor BorderColor = ConsoleColor.DarkRed;
 
         private const ConsoleColor HeadColor = ConsoleColor.DarkGreen;
         private const ConsoleColor BodyColor = ConsoleColor.Green;
@@ -258,7 +258,7 @@ namespace SnakeGame
             return currentDirection;
         }
 
-        //пока что оставаляю этот ваиант отрисовки границ, так как вроде работает получше
+        //пока что оставаляю этот вариант отрисовки границ, так как вроде работает получше
         static void DrawBorder(int mapWidth, int mapHeight)
         {
             // Отрисовка верхней границы
